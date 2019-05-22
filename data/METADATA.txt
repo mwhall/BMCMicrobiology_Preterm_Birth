@@ -1,0 +1,55 @@
+sample-id	age	parity	ethnicity	diet	gestation	education_level	mode_of_delivery	antibiotic_use_before_swab	antibiotic_use_before_delivery	steroid_use	serology	blood_group
+1001-M-D00-V	32	3+2	Caucasian	Non vegeterian	29+5	Higher education	Unknown	None	Yes	Yes	Negative	O Positive
+1002-M-D00-V	31	0+0	African	Non vegeterian	29+3	Higher education	Emergency C Section	None	None	Yes	Negative	AB  Positive
+1002C-M-D00-V	32	0+0	African	Non Vegeterian	39+2	Higher education	Spontaneous vaginal	None	None	None	Negative	A Positive
+1003-M-D00-V	39	0+0	African	Non vegeterian	35+0	Higher education	Emergency C Section	None	None	Yes	Negative	O Positive
+1004-M-D00-V	40	1+0	African	Non vegeterian	34+4	Higher education	Unknown	None	None	Yes	Negative	O Negative
+1006-M-D00-V	32	1+1	African	Non vegeterian	34+0	Higher education	Unknown	None	None	Yes	Negative	O Positive
+1007C-M-D00-V	34	2+0	African	Non Vegeterian	40+0	Higher education	Spontaneous vaginal	None	None	None	Negative	O Positive
+1008-M-D00-V	35	1+0	African	Non vegeterian	26+0	Higher education	Unknown	None	None	Yes	Negative	A Positive
+1008C-M-D00-V	34	0+0	African	Non Vegeterian	39+5	Higher education	Spontaneous vaginal	None	None	None	Negative	B Positive
+1009-M-D00-V	30	1+1	African	Non vegeterian	35+0	Higher education	Unknown	None	None	Yes	Negative	O Positive
+1010-M-D00-P	25	1+0	African	Non vegeterian	35+0	Higher education	Spontaneous vaginal	None	Yes	Yes	Negative	A Positive
+1010-M-D00-V	25	1+0	African	Non vegeterian	35+0	Higher education	Spontaneous vaginal	None	Yes	Yes	Negative	A Positive
+1010C-M-D00-P	25	1+0	African	Non vegeterian	35+0	Higher education	Spontaneous vaginal	None	Yes	Yes	Negative	A Positive
+1010C-M-D00-V	25	2+0	African	Non Vegeterian	37+5	Higher education	Spontaneous vaginal	None	None	None	Negative	O Positive
+1011-M-D00-V	36	1+0	African	Non vegeterian	36+0	Higher education	Spontaneous vaginal	None	None	None	Negative	A Positive
+1013-M-D00-V	45	3+0	African	Non vegeterian	35+6	Higher education	Elective C Section	None	Yes	Yes	Negative	O Positive
+1014-M-D00-V	25	1+0	African	Non vegeterian	26+0	Higher education	Unknown	None	None	Yes	Negative	A Positive
+1014C-M-D00-V	25	0+0	African	Non Vegeterian	39+2	Higher education	Spontaneous vaginal	None	None	None	Negative	O Positive
+1015-M-D00-V	35	1+1	African	Non vegeterian	25+0	Higher education	Unknown	None	None	Yes	Negative	O Positive
+1015C-M-D00-V	34	1+0	African	Non Vegeterian	40+4	Higher education	Spontaneous vaginal	None	None	None	Negative	O Positive
+1017C-M-D00-V	32	2+0	African	Non Vegeterian	41+0	High school	Spontaneous vaginal	None	None	None	Negative	A  Positive
+1018-M-D00-V	34	4+1	African	Non vegeterian	35+6	High School	Unknown	None	None	Yes	Negative	A Positive
+1019-M-D00-V	27	0+0	African	Non vegeterian	25+6	High School	Unknown	None	None	Yes	Negative	O Positive
+1019C-M-D00-V	28	0+0	African	Non Vegeterian	39+5	Higher education	Spontaneous vaginal	None	None	None	Negative	B Positive
+1021C-M-D00-V	28	1+1	African	Non Vegeterian	37+4	High school	Spontaneous vaginal	None	None	None	Negative	B Positive
+1022-M-D00-V	28	2+1	African	Non vegeterian	33+2	Higher education	Spontaneous vaginal	None	Yes	Yes	Negative	O Positive
+1022C-M-D00-V	28	3+0	African	Non Vegeterian	40+0	High school	Spontaneous vaginal	None	None	None	Negative	O Positive
+1023-M-D00-V	39	1+0	African	Non vegeterian	34+0	Higher education	Unknown	None	None	Yes	Negative	A Positive
+1024-M-D00-V	36	2+0	African	Non vegeterian	34+6	Higher education	Spontaneous vaginal	None	None	Yes	Negative	A Positive
+1025-M-D00-V	33	4+0	Caucasian	Non vegeterian	30+3	Higher education	Emergency C Section	None	None	Yes	Negative	A Positive
+1025C-M-D00-V	37	2+1	African	Non Vegeterian	40+0	Higher education	Spontaneous vaginal	None	None	None	Negative	O Positive
+1026-M-D00-V	31	0+0	African	Non vegeterian	29+5	Higher education	Unknown	None	None	Yes	Negative	O Positive
+1027-M-D00-V	37	2+2	African	Non vegeterian	29+5	Higher education	Emergency C Section	None	Yes	Yes	Negative	B Positive
+1027C-M-D00-V	34	3+0	African	Non Vegeterian	39+0	Higher education	Spontaneous vaginal	None	None	None	Negative	B Positive
+1028-M-D00-V	34	0+0	East Asian	Vegeterian	30+3	Primary School	Elective C Section	None	Yes	Yes	Negative	A Positive
+1029C-M-D00-V	32	1+1	African	Non Vegeterian	39+0	Higher education	Spontaneous vaginal	None	None	None	Negative	O Positive
+1030-M-D00-V	37	2+0	African	Non vegeterian	34+0	Higher education	Emergency C Section	None	None	None	Negative	O Positive
+1031-M-D00-V	39	2+0	African	Non vegeterian	32+5	Higher education	Emergency C Section	None	Yes	Yes	Negative	O Positive
+1032-M-D00-V	42	4+0	African	Non vegeterian	34+6	Higher education	Spontaneous vaginal	None	Yes	Yes	Negative	B Positive
+1033-M-D00-V	26	2+1	African	Non vegeterian	35+4	High School	Spontaneous vaginal	None	None	Yes	Negative	O Positive
+1034-M-D00-V	33	2+0	African	Non vegeterian	30+6	Higher education	Elective C Section	None	None	Yes	Negative	B Positive
+1035-M-D00-V	33	3+0	African	Non vegeterian	31+4	Higher education	Unknown	None		Yes	Negative	A Positive
+1036-M-D00-V	32	1+0	African	Non vegeterian	32+5	Higher education	Emergency C Section	None	Yes	Yes	Negative	AB Positive
+1037-M-D00-V	40	0+0	African	Non vegeterian	27+0	Higher education	Spontaneous vaginal	None	Yes	Yes	Negative	B Positive
+1038-M-D00-V	37	2+0	African	Non vegeterian	35+0	Higher education	Emergency C Section	None	Yes	Yes	Negative	O Positive
+1040-M-D00-V	31	1+0	African	Non vegeterian	34+0	Higher education	Spontaneous vaginal	None	None	Yes	Negative	O Positive
+1041-M-D00-V	25	0+0	African	Non vegeterian	35+0	High School	Emergency C Section	None	Yes	Yes	Negative	A  Positive
+1042-M-D00-V	38	3+0	African	Non vegeterian	33+0	Higher education	Spontaneous vaginal	None	Yes	Yes	Negative	A Positive
+1043-M-D00-V	26	0+0	African	Non vegeterian	33+0	Higher education	Unknown	None	Yes	Yes	Negative	A  Positive
+1044-M-D00-V	25	0+0	African	Non vegeterian	36+0	Higher education	Spontaneous vaginal	None	None	Yes	Negative	B Positive
+1046-M-D00-V	27	1+0	African	Non vegeterian	30 +0	Higher education	Unknown	None	None	Yes	Negative	O Positive
+1047-M-D00-V	33	1+1	African	Non vegeterian	29+3	Higher education	Emergency C Section	None	None	None	Negative	O Positive
+1049-M-D00-V	32	0+0	African	Non vegeterian	36+0	Higher education	Emergency C Section	None	Yes	Yes	Negative	O Positive
+1051-M-D00-V	34	0+2	African	Non vegeterian		Higher education	Emergency C Section	Yes	Yes	Yes	Negative	O Positive
