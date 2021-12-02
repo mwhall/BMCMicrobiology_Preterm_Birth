@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# Download raw data resources
+mkdir -p reads
+cd reads
+wget https://quoc.ca/static/preterm_birth_reads_passed.qza
+cd ..
+
+mkdir -p reference
+cd reference
+wget https://data.qiime2.org/2021.11/common/silva-138-99-nb-classifier.qza
+cd ..
+
 # Ensure your QIIME environment is loaded before running this script (i.e., conda activate qiime2-2021.11)
 
 # We perform parallel analyses on the QC passed and QC failed read files
@@ -7,18 +18,18 @@
 # especially since some of the placental samples are discussed in the manuscript
 
 #This command imports the FASTQ files into a QIIME artifact
-qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path reads/PassedSamples/import_to_qiime --output-path reads_passed
-qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path reads/FailedSamples/import_to_qiime --output-path reads_failed
+# Not needed if downloading .qza files directly
+#qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path reads/PassedSamples/import_to_qiime --output-path reads_passed
+#qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path reads/FailedSamples/import_to_qiime --output-path reads_failed
 
 #Using DADA2 to analyze quality scores of 10 random samples
-qiime demux summarize --p-n 10000 --i-data reads_passed.qza --o-visualization artifacts/qual_viz_passed
-qiime demux summarize --p-n 10000 --i-data reads_failed.qza --o-visualization artifacts/qual_viz_failed
+qiime demux summarize --p-n 10000 --i-data reads/preterm_birth_reads_passed.qza --o-visualization artifacts/qual_viz_passed
+qiime demux summarize --p-n 10000 --i-data reads/preterm_birth_reads_failed.qza --o-visualization artifacts/qual_viz_failed
 
 #Denoising with DADA2. Using quality score visualizations, you can choose trunc-len-f and trunc-len-r (note: sequences < trunc-len in length are discarded!)
-qiime dada2 denoise-paired --i-demultiplexed-seqs reads_passed.qza --o-table artifacts/unfiltered_table_passed --o-representative-sequences artifacts/representative_sequences_passed --p-trunc-len-r 270 --p-trunc-len-f 280 --p-trim-left-f 12 --p-trim-left-r 12 --p-n-threads 4 --o-denoising-stats artifacts/denoise_stats_passed.qza --verbose
-qiime dada2 denoise-paired --i-demultiplexed-seqs reads_failed.qza --o-table artifacts/unfiltered_table_failed --o-representative-sequences artifacts/representative_sequences_failed --p-trunc-len-r 270 --p-trunc-len-f 280 --p-trim-left-f 12 --p-trim-left-r 12 --p-n-threads 4 --o-denoising-stats artifacts/denoise_stats_failed.qza --verbose
+qiime dada2 denoise-paired --i-demultiplexed-seqs reads/preterm_birth_reads_passed.qza --o-table artifacts/unfiltered_table_passed --o-representative-sequences artifacts/representative_sequences_passed --p-trunc-len-r 270 --p-trunc-len-f 280 --p-trim-left-f 12 --p-trim-left-r 12 --p-n-threads 4 --o-denoising-stats artifacts/denoise_stats_passed.qza --verbose
+qiime dada2 denoise-paired --i-demultiplexed-seqs reads/preterm_birth_reads_failed.qza --o-table artifacts/unfiltered_table_failed --o-representative-sequences artifacts/representative_sequences_failed --p-trunc-len-r 270 --p-trunc-len-f 280 --p-trim-left-f 12 --p-trim-left-r 12 --p-n-threads 4 --o-denoising-stats artifacts/denoise_stats_failed.qza --verbose
 
-wget https://data.qiime2.org/2021.11/common/silva-138-99-nb-classifier.qza
 
 qiime feature-classifier classify-sklearn --i-classifier silva-138-99-nb-classifier.qza --i-reads artifacts/representative_sequences_passed.qza --o-classification artifacts/taxonomy_passed
 qiime feature-classifier classify-sklearn --i-classifier silva-138-99-nb-classifier.qza --i-reads artifacts/representative_sequences_failed.qza --o-classification artifacts/taxonomy_failed
