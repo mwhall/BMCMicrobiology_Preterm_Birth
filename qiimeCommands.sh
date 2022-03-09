@@ -69,3 +69,8 @@ qiime diversity alpha-group-significance --i-alpha-diversity artifacts/diversity
 #Alpha rarefaction curves show taxon accumulation as a function of sequence depth
 qiime diversity alpha-rarefaction --i-table artifacts/unfiltered_table_passed.qza --p-max-depth 10000 --o-visualization artifacts/diversity_2000_passed/alpha_rarefaction.qzv --m-metadata-file metadata/METADATA_passed.tsv --i-phylogeny artifacts/rooted_tree_passed.qza
 
+#ALDEX2 analysis commands
+qiime aldex2 aldex2 --i-table artifacts/unfiltered_table_passed.qza --m-metadata-file metadata/METADATA_passed.tsv --m-metadata-column case_control --o-differentials artifacts/case_control_aldex
+qiime aldex2 effect-plot --i-table artifacts/case_control_aldex.qza --o-visualization artifacts/case_control_aldex_viz
+qiime aldex2 extract-differences --i-table artifacts/case_control_aldex.qza --o-differentials artifacts/case_control_aldex_differentials --p-sig-threshold 1.0 --p-effect-threshold 0 --p-difference-threshold 0
+qiime tools export --input-path artifacts/case_control_aldex_differentials.qza --output-path artifacts/aldex_differentials
